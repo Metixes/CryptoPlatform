@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./src/assets/fonts/NeueMachina-Ultralight.eot');
+    src: local('./src/assets/fonts/Neue Machina Ultralight'), local('./src/assets/fonts/NeueMachina-Ultralight'),
+        url('./src/assets/fonts/NeueMachina-Ultralight.eot?#iefix') format('embedded-opentype'),
+        url('./src/assets/fonts/NeueMachina-Ultralight.woff2') format('woff2'),
+        url('./src/assets/fonts/NeueMachina-Ultralight.woff') format('woff'),
+        url('./src/assets/fonts/NeueMachina-Ultralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./src/assets/fonts/NeueMachina-Light.eot');
+    src: local('./src/assets/fonts/Neue Machina Light'), local('./src/assets/fonts/NeueMachina-Light'),
+        url('./src/assets/fonts/NeueMachina-Light.eot?#iefix') format('embedded-opentype'),
+        url('./src/assets/fonts/NeueMachina-Light.woff2') format('woff2'),
+        url('./src/assets/fonts/NeueMachina-Light.woff') format('woff'),
+        url('./src/assets/fonts/NeueMachina-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./src/assets/fonts/NeueMachina-Black.eot');
+    src: local('./src/assets/fonts/Neue Machina Black'), local('./src/assets/fonts/NeueMachina-Black'),
+        url('./src/assets/fonts/NeueMachina-Black.eot?#iefix') format('embedded-opentype'),
+        url('./src/assets/fonts/NeueMachina-Black.woff2') format('woff2'),
+        url('./src/assets/fonts/NeueMachina-Black.woff') format('woff'),
+        url('./src/assets/fonts/NeueMachina-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./src/assets/fonts/NeueMachina-Regular.eot');
+    src: local('./src/assets/fonts/Neue Machina Regular'), local('./src/assets/fonts/NeueMachina-Regular'),
+        url('./src/assets/fonts/NeueMachina-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./src/assets/fonts/NeueMachina-Regular.woff2') format('woff2'),
+        url('./src/assets/fonts/NeueMachina-Regular.woff') format('woff'),
+        url('./src/assets/fonts/NeueMachina-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./src/assets/fonts/NeueMachina-Bold.eot');
+    src: local('./src/assets/fonts/Neue Machina Bold'), local('./src/assets/fonts/NeueMachina-Bold'),
+        url('./src/assets/fonts/NeueMachina-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./src/assets/fonts/NeueMachina-Bold.woff2') format('woff2'),
+        url('./src/assets/fonts/NeueMachina-Bold.woff') format('woff'),
+        url('./src/assets/fonts/NeueMachina-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./src/assets/fonts/NeueMachina-Medium.eot');
+    src: local('./src/assets/fonts/Neue Machina Medium'), local('./src/assets/fonts/NeueMachina-Medium'),
+        url('./src/assets/fonts/NeueMachina-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./src/assets/fonts/NeueMachina-Medium.woff2') format('woff2'),
+        url('./src/assets/fonts/NeueMachina-Medium.woff') format('woff'),
+        url('./src/assets/fonts/NeueMachina-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./src/assets/fonts/NeueMachina-Ultrabold.eot');
+    src: local('./src/assets/fonts/Neue Machina Ultrabold'), local('./src/assets/fonts/NeueMachina-Ultrabold'),
+        url('./src/assets/fonts/NeueMachina-Ultrabold.eot?#iefix') format('embedded-opentype'),
+        url('./src/assets/fonts/NeueMachina-Ultrabold.woff2') format('woff2'),
+        url('./src/assets/fonts/NeueMachina-Ultrabold.woff') format('woff'),
+        url('./src/assets/fonts/NeueMachina-Ultrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+

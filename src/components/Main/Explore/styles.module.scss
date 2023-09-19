@@ -1,0 +1,220 @@
+@import "../../../assets/styles/variables/variables.scss";
+@import "../../../assets/styles/mixins/mixins.scss";
+
+.container {
+  background-color: $black;
+}
+
+.wrapper {
+  @include inner-container;
+  padding: 100px 0 84px;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+
+  &_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &_title {
+    @include h2-explore-text;
+  }
+  &_btn {
+    @include button-past;
+
+    & > svg {
+      width: 14px;
+      height: 10px;
+    }
+  }
+
+  &_cards {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  @media (320px <= width <= 1024px) {
+    &_info{
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+  @media (320px <= width <= 850px) {
+    gap: 40px;
+    &_info{
+      flex-direction: column;
+    }
+  }
+  @media (320px <= width <= 800px) {
+    &_cards{
+      flex-direction: column;
+    }
+  }
+  @media (320px <= width <= 440px) {
+    &_cards{
+      gap: 0;
+    }
+  }
+}
+
+.card {
+  padding-bottom: 32px;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 84px;
+
+  border-radius: 8px;
+  background-image: url(../../../assets/images/main/lottery/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &_header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &_topCharts {
+    @include button-top-charts;
+  }
+
+  &_counter {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+
+    &_item {
+      @include text-nums;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 5px;
+    }
+    &_nums {
+      @include text-date;
+    }
+  }
+
+  &_info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 38px;
+
+    &_price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 17px;
+    }
+
+    &_title {
+      @include text-card-title;
+    }
+
+    &_sum {
+      @include text-price;
+    }
+
+    &_btn {
+      @include button-buy-ticket;
+    }
+  }
+
+  @media (320px <= width <= 1200px) {
+    position: relative;
+    max-width: 33.33%;
+    gap: 140px;
+    
+    &_header{
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+
+    &_topChartsWrapper{
+      position: relative;
+      max-width: 141px;
+      width: 100%;
+    }
+
+    &_counter{
+      position: absolute;
+      top: 30%;    
+      left: 50%;              
+      transform: translate(-50%, -50%);
+    }
+
+    &_btn {
+      @include button-buy-ticket;
+    }
+  }
+  @media (320px <= width <= 1024px) {
+    &_topChartsWrapper{
+      max-width: 135px;
+    }
+  }
+  @media (320px <= width <= 800px) {
+    max-width: 100%;
+    width: 80%;
+    gap: 125px;
+
+    &_topChartsWrapper{
+      max-width: 100%;
+      width: 39%;
+    }
+
+    &_counter{
+      gap: 25px;
+      top: 20%;    
+      left: 73%; 
+      
+      &_item{
+        gap: 10px;
+      }
+    }
+  }
+  @media (320px <= width <= 750px){
+    &_counter{
+      top: 13%;
+    }
+  }
+  @media (320px <= width <= 550px){
+    &_counter{
+      gap: 15px;
+    }
+  }
+  @media (320px <= width <= 450px){
+    padding-bottom: 50px;
+    max-width: 400px;
+    width: inherit;
+    background-position-y: -40px;
+    gap: 125px;
+
+    &_info{
+      gap: 25px;
+    }
+
+    &_topChartsWrapper{
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &_counter{
+      top: 25%;    
+      left: 50%;
+      
+      &_item{
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

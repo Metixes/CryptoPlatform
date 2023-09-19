@@ -1,0 +1,149 @@
+@import "../../../assets/styles/variables/variables.scss";
+@import "../../../assets/styles/mixins/mixins.scss";
+
+.container {
+  background-color: $black-middle;
+}
+
+.wrapper {
+  @include inner-container;
+}
+
+.faqs{
+  display: flex;
+  flex-direction: column;
+  padding: 121px 0;
+
+  &_title{
+    text-align: start;
+    @include h2-title-text-sora;
+  }
+
+  &_btn{
+    @include button-show-more;
+    & > svg{
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &_collapse {
+    width: 100%;
+    margin: 25px 0 74px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+  }
+  @media (320px <= width <= 800px) {
+    padding: 30px 0;
+
+    &_title{
+      text-align: center;
+    }
+    &_collapse{
+      margin: 30px 0 40px;
+    }
+  }
+}
+
+:global {
+  .ant-collapse {
+    border: none;
+    border-radius: 0 0 0 0 !important;
+    &-header {
+      gap: 15px !important;
+      align-items: center !important;
+      padding: 32px 53px 32px 0 !important;
+      border-radius: initial !important;
+      border-bottom: 1px solid $white20;
+      & > span {
+        @include h2-text-sora;
+      }
+      &-text{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        & > svg{
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+    &-content {
+      border: none !important;
+      background-color: transparent !important;
+      &-box {
+        padding: 0 32px 32px 51px !important;
+        border-bottom: 1px solid $white20;
+        & > p {
+          @include subtext-sora;
+          text-align: start;
+        }
+      }
+    }
+    &-item {
+      border: none !important;
+    }
+    &-expand-icon{
+      padding-inline-start: 0 !important;
+      padding-inline-end: 0 !important;
+      transform: rotate(90deg);
+      transition: transform .3s ease-in-out;
+    }
+    .anticon > svg{
+      width: 16px;
+      height: 16px;
+    }
+
+    &-item:where(.ant-collapse-item-active){
+      .ant-collapse-header{
+        border: none !important;
+      }
+      .ant-collapse-expand-icon{
+        transform: rotate(-180deg);
+        transition: transform .3s ease-in-out;
+      }
+    }
+
+    @media (320px <= width <= 1024px) {
+      .ant-collapse{
+        &-header {
+          padding: 32px 32px 32px 0 !important;
+
+          &-text{
+            & > svg{
+              max-width: 30px;
+              max-height: 30px;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+      .anticon > svg{
+        width: 14px;
+        height: 14px;
+      }
+    }
+    @media (320px <= width <= 400px) {
+      .ant-collapse{
+        &-header {
+          padding: 32px 20px 32px 0 !important;
+          &-text{
+            & > svg{
+              max-width: 30px;
+              max-height: 30px;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+      .anticon > svg{
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}

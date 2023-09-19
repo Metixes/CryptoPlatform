@@ -1,0 +1,42 @@
+@import "../../../assets/styles/variables/variables.scss";
+@import "../../../assets/styles/mixins/mixins.scss";
+
+.lottery {
+  margin-top: 173px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &_logo {
+    margin-bottom: 24px;
+  }
+  &_title {
+    @include h1-text;
+  }
+  &_jackpot {
+    @include text-jackpot-sum;
+  }
+  &_btns {
+    max-width: 392px;
+    margin-top: 78px;
+    display: flex;
+    align-items: center;
+    gap: 31px;
+
+    &_btnConnect {
+      @include button-connect-lottery;
+    }
+    &_btnWatch {
+      @include button-green-dark;
+    }
+  }
+  @media (320px <= width <= 768px) {
+    margin-top: 120px;
+  }
+  @media (320px <= width <= 450px) {
+    &_btns{
+      flex-direction: column;
+    }
+  }
+}

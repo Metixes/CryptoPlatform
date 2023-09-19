@@ -1,0 +1,64 @@
+@import "../../../assets/styles/variables/variables.scss";
+@import "../../../assets/styles/mixins/mixins.scss";
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+    &_link{
+        width: 64px;
+        display: block;
+        text-align: center;
+    }
+
+    &_text{
+        @include nav-links;
+    }
+
+    &_navActive {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: $green-light;
+        transform: translateX(0);
+        transition: transform 0.5s ease, opacity .3s ease;
+        opacity: 1;
+        z-index: 2;
+    }
+
+    @media (320px <= width <= 1440px) {
+        gap: 30px;
+    }
+    @media (320px <= width <= 1024px) {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: $green-light;
+        transform: translateX(100%);
+        transition: transform 0.5s ease, opacity .3s ease;
+        opacity: 0;
+        z-index: 2;
+
+        &_text{
+            color: $black;
+        }
+    }
+    @media (320px <= width <= 1024px) {
+        // &_text{
+        //     @include nav-links;
+        // }
+    }
+}
