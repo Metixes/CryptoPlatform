@@ -14,12 +14,14 @@ export default function metaMask({ styles }) {
   const [messageApi, contextHolder1] = message.useMessage();
 
   useEffect(() => {
-    window.ethereum.on('accountsChanger', userChangedAccount)
-    window.ethereum.on('chainChanged', chainChangedHandler);
-    console.log(window.ethereum.isConnected());
-    return() => {
-      window.ethereum.removeListener('accountsChanger', () => {})
-      window.ethereum.removeListener('chainChanged', () => {})
+    if(window.ethereum){
+      window.ethereum.on('accountsChanger', userChangedAccount)
+      window.ethereum.on('chainChanged', chainChangedHandler);
+      console.log(window.ethereum.isConnected());
+      return() => {
+        window.ethereum.removeListener('accountsChanger', () => {})
+        window.ethereum.removeListener('chainChanged', () => {})
+      }
     }
   }, [])
 

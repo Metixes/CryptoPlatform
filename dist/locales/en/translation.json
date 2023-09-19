@@ -1,0 +1,65 @@
+{
+    "buttons" : {
+        "Connect" : "Connect",
+        "WatchVideo" : "Watch video",
+        "BuyTicket" : "Buy Ticket",
+        "Past" : "Past lotteries",
+        "ShowMore" : "Show More"
+    },
+    "header" : {
+        "Home" : "Home",
+        "Game" : "Game",
+        "Lottery" : "Lottery",
+        "Pages" : "Pages",
+        "Blog" : "Blog",
+        "Contact" : "Contact"
+    },
+    "lottery" : {
+        "title" : "Exclusive lottery"
+    },
+    "explore" : {
+        "title" : "Explore Our Exciting Crypto Lotteries"
+    },
+    "card" : {
+        "label" : "Top Choice",
+        "title" : "Mega Prize",
+        "Days" : "Day",
+        "Hours" : "Hours",
+        "Mins" : "Mins",
+        "Secs" : "Secs"
+    },
+    "FAQs" : {
+        "title" : "FAQs",
+        "faq1" : "How does the crypto lottery work?",
+        "faq-desc-1" : "How does the crypto lottery work?",
+        "faq2" : "Which cryptocurrencies can I use to buy tickets?",
+        "faq-desc-2" : "Which cryptocurrencies can I use to buy tickets?",
+        "faq3" : "Is the crypto lottery fair and transparent?",
+        "faq-desc-3" : "Is the crypto lottery fair and transparent?",
+        "faq4" : "How can I participate in the crypto lottery?",
+        "faq-desc-4" : "How can I participate in the crypto lottery?"
+    },
+    "footer" : {
+        "AboutUs" : "About Us",
+        "Contact" : "Contact",
+        "PrivacyPolicy" : "Privacy policy",
+        "TermsOfServices" : "Terms of Services",
+        "copy" : "One, 2022 | design By One. All Right reserved."
+    },
+    "notification": {
+        "Yes": "Yes",
+        "No": "No",
+        "title": "Metamask is not installed",
+        "description": "Install extensions?"
+    },
+    "connectSuccess": {
+        "content": "Connecting your wallet...",
+        "done": "Connected"
+    },
+    "connectWarning": {
+        "content": "Connection error"
+    },
+    "connectInfo": {
+        "content": "You have already connected your wallet"
+    }
+}
