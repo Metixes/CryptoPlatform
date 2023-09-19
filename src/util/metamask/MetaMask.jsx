@@ -17,7 +17,6 @@ export default function metaMask({ styles }) {
     if(window.ethereum){
       window.ethereum.on('accountsChanger', userChangedAccount)
       window.ethereum.on('chainChanged', chainChangedHandler);
-      console.log(window.ethereum.isConnected());
       return() => {
         window.ethereum.removeListener('accountsChanger', () => {})
         window.ethereum.removeListener('chainChanged', () => {})
